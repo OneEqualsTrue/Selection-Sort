@@ -51,7 +51,6 @@ public class Lis {
 	/*
 	 * Selection Sort
 	 */
-
 	public void sort() {
 		int smallest;
 		int temp;
