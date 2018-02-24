@@ -15,7 +15,7 @@ public class List_s {
 	/*
 	 * Constructor
 	 */
-	public Lis_s(int len, char type) {
+	public List_s(int len, char type) {
 		this.n = len;
 		this.lis = new int[len];
 		if(type == 'r') fillRandom();
