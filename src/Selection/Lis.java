@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
-public class Lis {
+public class List_s {
 	
 	int[] lis;
 	int n;
@@ -15,14 +15,14 @@ public class Lis {
 	/*
 	 * Constructor
 	 */
-	public Lis(int len, char type) {
+	public Lis_s(int len, char type) {
 		this.n = len;
 		this.lis = new int[len];
 		if(type == 'r') fillRandom();
 	}
 	
 	/*
-	 * Fill array with random values from 1-9
+	 * Fill array with random values from 1-99
 	 * Only works if 'r' was invoked from instantiation
 	 */
 	private void fillRandom() {
@@ -33,7 +33,7 @@ public class Lis {
 	}
 
 	/*
-	 * Doesn't work for arrays greater than n = 1489
+	 * Print entire list to inputted file in a readable format
 	 */
 	public void print(String file) throws IOException {
 		writer = new BufferedWriter(new FileWriter(file));
