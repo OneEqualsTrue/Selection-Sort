@@ -6,7 +6,7 @@ public class SelectionSort {
 
 	public static void main(String[] args) {
 
-		Lis list = new Lis(100000, 'r'); // size, random numbers
+		List_s list = new Lis_s(100000, 'r'); // size, random numbers
 		try {
 			list.print("list_out.log");
 		} catch (IOException e) {
